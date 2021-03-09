@@ -1,0 +1,58 @@
+body{
+  margin: 1;
+  box-sizing: boarder-box;
+  height: 100%;
+  padding:10px;
+  background-color: rgba(206, 211, 206, 0.529);
+}
+  
+  }
+    * {
+      box-sizing: border-box;
+    }
+    
+    .box {
+      float: left;
+      width: 25%;
+      padding: 50px;
+      height: 400px;
+    }
+    
+    .clearfix:after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      font-size: 15px;
+      text-align: left;
+      flex-flow: nowrap;
+      
+    }
+    
+
+    .flex-item-left {
+      background-color: rgb(173, 171, 171);
+      padding:10px;
+      flex: 50%;
+    }
+    
+    .flex-item-right {
+      background-color: rgb(251, 253, 255);
+      padding: 10px;
+      flex: 50%;
+    }
+    
+    /* Responsive layout - makes a one column-layout instead of two-column layout */
+    @media (max-width: 800px) {
+      .flex-container {
+        flex-direction: row;
+      }
+    }
